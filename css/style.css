@@ -1,0 +1,65 @@
+/* Basic CSS resets -- leveling slight inconsistencies in browsers */
+html, body {
+	margin:0px;
+	padding:0px;
+	height:100%;
+}
+
+html {
+		/* Standard text-settings below */
+	font-size: 1em;
+    line-height: 1.4em;
+}
+
+
+
+
+body {
+ font-family: helvetica, sans-serif;
+  background: #FAF9F6;
+  color: black;
+  margin: 20px;     
+}
+
+
+#container {
+    border: 1px solid #f0c1f7;
+    background: rgb(#,#,#);
+    width: 90%;                            /* You can change this number */
+    max-width: 800px;                 /* You can change this number */
+    margin: auto;
+}
+
+
+.greeting{
+    color: red;
+}
+
+#jk{
+    text-decoration: underline;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0px;
+}
+
+a {
+  color: blue;
+}
+
+a:hover {
+  color: purple;
+}
+
+figure {
+  margin: 0px;
+}
+
+figure img {
+  width: 100%;
+}
+
+figcaption, footer {
+  font-size: 0.75em;
+}

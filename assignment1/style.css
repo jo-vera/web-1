@@ -1,0 +1,55 @@
+/* Basic CSS resets -- leveling slight inconsistencies in browsers */
+html, body {
+	margin:0px;
+	padding:0px;
+	height:100%;
+}
+
+html {
+		/* Standard text-settings below */
+	font-size: 1em;
+    line-height: 1.4em;
+}
+
+
+
+
+body {
+	font-family:helvetica, sans-serif;
+    background:#4657f2;
+    color:#fc0303;
+    margin: 20px;
+}
+
+
+#container {
+
+width:800px;
+border:1px solid black; 
+    margin:auto;
+    padding:30px;
+    background: #dbfaff;
+    
+       
+    
+}
+
+header{
+    text-align:center;
+    font-family:Palatino,serif;
+    background:#fafafc;
+    padding:20px;
+    margin: 10px 0;
+    border: 2px solid #091e40
+}
+
+footer{
+    font-size:0.8em;
+    background:#fafafc;
+    padding:20px;
+    margin: 10px 0;
+    border: 2px solid #091e40
+    
+}
+
+
