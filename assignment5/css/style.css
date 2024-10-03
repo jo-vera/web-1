@@ -1,0 +1,196 @@
+/* Basic CSS resets -- leveling slight inconsistencies in browsers */
+html,
+body {
+  margin: 0px;
+  padding: 0px;
+  height: 100%;
+}
+
+html {
+  /* Standard text-settings below */
+  font-size: 1em;
+  line-height: 1.4em;
+}
+
+body {
+  /* animation: honda 10s forwards; */
+  animation-delay: 3s;
+}
+
+@keyframes honda {
+  0% {
+    background: palegreen;
+  }
+  25% {
+    background: plum;
+  }
+  50% {
+    background: silver;
+  }
+  75% {
+    background: tan;
+  }
+  100% {
+    background: thistle;
+  }
+}
+
+#container {
+  width: 700px;
+  height: 700px;
+  border: 1px solid black;
+  border-radius: 100%;
+  margin: auto;
+  position: relative;
+  transition: all 1s;
+}
+
+#container:hover {
+  animation: honda 4s ease-in-out;
+}
+
+#triangle-left {
+  width: 0;
+  height: 0;
+  border-left: 25px solid transparent;
+  border-right: 25px solid transparent;
+  border-bottom: 50px solid #555;
+  position: absolute;
+  left: 50px;
+  top: 300px;
+}
+
+#triangle-left:hover {
+  transform: rotate(90deg);
+  transition: all 1s;
+  border-bottom: 50px solid powderblue;
+}
+
+#triangle-right {
+  width: 0;
+  height: 0;
+  border-left: 25px solid transparent;
+  border-right: 25px solid transparent;
+  border-bottom: 50px solid #555;
+  position: absolute;
+  left: 600px;
+  top: 300px;
+}
+#triangle-right:hover {
+  transform: rotate(-90deg);
+  transition: all 1s;
+  border-bottom: 50px solid powderblue;
+}
+
+#square-top-left {
+  height: 50px;
+  width: 50px;
+  background-color: #555;
+  position: absolute;
+  left: 150px;
+  top: 100px;
+}
+#square-top-left:hover {
+  transform: scale(50%);
+  transition: all 2s;
+  background-color: rgb(99, 136, 88);
+}
+
+#square-top-right {
+  height: 50px;
+  width: 50px;
+  background-color: #555;
+  position: absolute;
+  left: 500px;
+  top: 100px;
+}
+#square-top-right:hover {
+  transform: scale(150%);
+  transition: all 1s;
+  background-color: rgb(204, 64, 223);
+}
+
+#square-bot-right {
+  height: 50px;
+  width: 50px;
+  background-color: #555;
+  position: absolute;
+  left: 500px;
+  top: 550px;
+}
+#square-bot-right:hover {
+  transform: rotate(180deg);
+  transition: all 1s;
+  background-color: salmon;
+}
+
+#square-bot-left {
+  height: 50px;
+  width: 50px;
+  background-color: #555;
+  position: absolute;
+  left: 150px;
+  top: 550px;
+}
+#square-bot-left:hover {
+  transform: rotate(-180deg);
+  transition: all 1s;
+  background-color: salmon;
+}
+
+#rectangle-bot-mid {
+  height: 50px;
+  width: 100px;
+  background-color: #555;
+  position: absolute;
+  left: 290px;
+  top: 600px;
+}
+#rectangle-bot-mid:hover {
+  background-color: pink;
+  transition: all 2s;
+  transform: translateY(-100px);
+}
+
+#rectangle-mid {
+  height: 50px;
+  width: 100px;
+  background-color: rgb(87, 155, 194);
+  position: absolute;
+  color: azure;
+  left: 290px;
+  top: 400px;
+}
+#rectangle-mid:hover {
+  transform: rotate(1800deg);
+  transition: all 8s;
+}
+
+#rectangle-top-mid {
+  height: 50px;
+  width: 100px;
+  background-color: blue;
+  position: absolute;
+  left: 290px;
+  top: 60px;
+}
+#rectangle-top-mid:hover {
+  background-color: pink;
+  transition: all 2s;
+  transform: translateY(100px);
+}
+
+#circle {
+  height: 50px;
+  width: 50px;
+  background-color: #555;
+  border-radius: 50%;
+  position: absolute;
+  left: 320px;
+  top: 300px;
+}
+#circle:hover {
+  transform: scale(200%);
+  transition: all 2s;
+  background-color: rgb(207, 189, 22);
+}
