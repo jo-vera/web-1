@@ -1,0 +1,101 @@
+/* Basic CSS resets -- leveling slight inconsistencies in browsers */
+body {
+  margin: 0px;
+  padding: 4px;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+html {
+  /* Standard text-settings below */
+  font-size: 1em;
+  line-height: 1.4em;
+}
+
+/* Mobile First CSS: we'll design for phone sizes first, then add media queries for larger screens later */
+
+body {
+  background-image: url("../img/jelly.jpg");
+  background-size: contain;
+  /* background-repeat: no-repeat; */
+  color: whitesmoke;
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+#square {
+  background-color: violet;
+  padding: 10px;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+#triangle {
+  background-color: black;
+  padding: 10px;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+#container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+
+  /* padding: 30px; */
+}
+
+header {
+  width: 100%;
+}
+main {
+  display: flex;
+  width: 100%;
+  box-sizing: border-box;
+  /* padding: 10px; */
+  flex-direction: column;
+}
+
+/* ========================================
+MEDIA QUERIES!
+You can adjust the min-width numbers below, and add as many new media queries as you need.
+======================================== */
+/* Minimum width for small tablets. */
+
+/* Minimum width for tablets. */
+@media all and (min-width: 769px) {
+  #container {
+    width: 550px;
+    margin: 0 auto;
+  }
+
+  section#triangle {
+    width: 100%;
+    float: left;
+  }
+  section#square {
+    width: 100%;
+    float: left;
+  } /* closes 769px+ */
+}
+
+/* Minimum width for desktop screens. */
+@media all and (min-width: 1024px) {
+  #container {
+    width: 900px;
+  }
+
+  section#triangle {
+    width: 50%;
+    float: left;
+  }
+  section#square {
+    width: 50%;
+    float: left;
+  }
+
+  main {
+    flex-direction: row;
+  }
+} /* closes 1024px+ */
