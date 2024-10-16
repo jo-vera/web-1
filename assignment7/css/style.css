@@ -1,0 +1,102 @@
+form {
+  border: 1px solid rgb(192, 197, 119);
+  padding: 10px;
+}
+
+input[type="button"] {
+  background-color: rgb(96, 115, 226);
+  color: rgb(206, 199, 105);
+  padding: 12px;
+  border-radius: 4px;
+  border: none;
+  cursor: url("../img/cheesewheel.png"), auto;
+}
+
+body {
+  margin: 0 auto;
+  padding: 4px;
+  height: 100%;
+  box-sizing: border-box;
+  cursor: url("../img/cheesewheel.png"), auto;
+}
+
+html {
+  /* Standard text-settings below */
+  font-size: 1em;
+  line-height: 1.4em;
+}
+@keyframes cheese {
+  0% {
+    background: rgb(147, 153, 66);
+  }
+  25% {
+    background: rgb(83, 83, 37);
+  }
+  50% {
+    background: rgb(44, 48, 25);
+  }
+  75% {
+    background: rgb(29, 49, 58);
+  }
+  100% {
+    background: rgb(42, 79, 104);
+  }
+}
+body {
+  background-image: url("../img/night.JPG");
+  background-size: cover;
+  /* background-repeat: no-repeat; */
+  color: whitesmoke;
+  font-family: "Tangerine", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+h1 {
+  text-align: center;
+}
+
+main {
+  text-align: center;
+  background-color: rgb(161, 136, 65);
+  margin-left: 40px;
+  margin-right: 40px;
+}
+#container {
+  background-color: rgb(175, 173, 64);
+  width: 500px;
+  height: 500px;
+  border: 1px solid black;
+  border-radius: 100%;
+  margin: auto;
+  position: relative;
+  transition: all 1s;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#container:hover {
+  animation: cheese 4s ease-in-out;
+}
+
+header {
+  height: fit-content;
+}
+/* Minimum width for tablets. */
+@media all and (min-width: 769px) {
+  #container {
+    width: 500px;
+    margin: 0 auto;
+  } /* closes 769px+ */
+}
+
+/* Minimum width for Desktop. */
+@media all and (min-width: 1024px) {
+  body {
+    max-width: 100vh;
+  }
+  #container {
+    width: 100%;
+    height: 100vh;
+    margin: 0 auto;
+  } /* closes 769px+ */
+}

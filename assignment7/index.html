@@ -1,0 +1,55 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, intiial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="ie-edge" />
+
+    <title>Assignment 7</title>
+
+    <link rel="stylesheet" href="css/style.css" />
+    <a
+      href="https://www.flaticon.com/free-icons/cheese"
+      title="cheese icons"
+    ></a>
+
+    <script>
+      function butpress() {
+        var answers = [
+          "the sky",
+          "your pocket",
+          "a lover's eyes",
+          "reflection of water",
+          "across space",
+          "in a rearview mirror",
+          "in a wheel of cheese",
+          "inside a dream",
+          "craddled in a cloud",
+          "wherever home is",
+          "within yourself",
+        ];
+        var createAnswer = answers[Math.floor(Math.random() * answers.length)];
+        console.log(createAnswer);
+
+        document.getElementById("message").innerHTML = createAnswer;
+      }
+    </script>
+  </head>
+
+  <body>
+    <div id="container" div>
+      <header>
+        <h1>The Moon Rules the Sky</h1>
+      </header>
+
+      <main>
+        <form>
+          <p>Where do you find the moon?</p>
+
+          <input type="button" onclick="butpress()" value="find it" />
+        </form>
+
+        <p id="message"></p>
+      </main>
+    </div>
+  </body>
+</html>
