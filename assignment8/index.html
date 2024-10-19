@@ -1,0 +1,87 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, intiial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="ie-edge" />
+
+    <title>Assignment 8</title>
+
+    <link rel="stylesheet" href="css/style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div id="container">
+      <h1>₊‧°𖥔°‧₊Ditto₊‧°𖥔°‧₊</h1>
+
+      <div id="initial-content">
+        <p>This is New Jeans's song, Ditto</p>
+      </div>
+
+      <button id="button1">Tell Me</button>
+      <button id="button2">Show Us</button>
+      <button id="button3">Sing Song</button>
+
+      <section id="Me" class="hidden-content">
+        <p>
+          Stay in the middle Like you a little, don't want no riddle Say it, say
+          it back, oh, say it ditto Can't wait 'til the morning, so say it,
+          ditto
+        </p>
+      </section>
+
+      <figure id="Us" class="hidden-content responsive">
+        <img src="./img/street.jpg" width="100%" alt="streetphoto" />
+        <figcaption>
+          Do you want somebody? Like I want somebody? You smiled at me but Do
+          you think about me now, yeah? All the time, yeah, all the time
+        </figcaption>
+      </figure>
+      <figure id="Song" class="hidden-content responsive">
+        <iframe
+          src="https://www.youtube.com/embed/pSUydWEqKwE?si=wmGMVQ-CqnO90y0h"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        ></iframe>
+        <figcaption>
+          I got no time to lose I had a long day I miss you Ra-ta-ta-ta echoes
+          my heart (Ra-ta-ta-ta)
+        </figcaption>
+      </figure>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  </body>
+</html>
+
+<!-- Link to jQuery on Google Hosted Libraries-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+<script>
+  $(document).ready(function () {
+    // Hide the content initially
+    $(".hidden-content").hide();
+
+    // Toggle content on button click
+    $("#button1").click(function () {
+      $("#Me").toggle();
+    });
+
+    $("#button2").click(function () {
+      $("#Us").toggle();
+    });
+
+    $("#button3").click(function () {
+      $("#Song").toggle();
+    });
+  });
+</script>
