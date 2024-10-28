@@ -1,0 +1,60 @@
+body {
+  font-family: "Abel", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  background-color: rgb(238, 240, 233);
+  box-sizing: border-box;
+}
+
+#container {
+  background-color: rgb(191, 192, 181);
+}
+
+.artbox {
+  border: 1px solid rgb(254, 254, 255);
+  padding: 10px;
+}
+
+.artbox img {
+  width: 100%;
+}
+
+@media screen and (min-width: 769px) {
+  main {
+    display: flex;
+    justify-content: center;
+  }
+  #container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  #artwork1 {
+    flex-basis: 300px;
+  }
+  #artwork2 {
+    flex-basis: 300px;
+  }
+  #artwork3 {
+    flex-grow: 1;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  #container {
+    width: 950px;
+    flex-wrap: nowrap;
+  }
+
+  #artwork1 {
+    flex-basis: 30%;
+  }
+  #artwork2 {
+    flex-basis: 30%;
+  }
+  #artwork3 {
+    flex-basis: 30%;
+  }
+}
