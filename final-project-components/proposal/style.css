@@ -1,0 +1,11 @@
+/* Basic CSS resets -- leveling slight inconsistencies in browsers */
+html,
+body {
+  font-family: "Cutive Mono", monospace;
+  font-weight: 400;
+  font-style: normal;
+  background-color: rgb(224, 226, 216);
+  box-sizing: border-box;
+  margin-left: 150px;
+  margin-right: 150px;
+}
