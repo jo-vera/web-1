@@ -413,6 +413,10 @@ h3 {
   .product-info-text {
     padding: 0;
   }
+
+  .timer-box {
+    width: 100%;
+  }
 }
 
 @media (max-width: 480px) {
